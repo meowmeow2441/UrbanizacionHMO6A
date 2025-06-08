@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saguaros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div id="page">
+
+    <div id="Message-Container">
+      <div id="message">
+            <div id="mensaje">
+                <h1>¡Felicidades!</h1>
+                <p>Terminaste con victoria.</p>
+                <p id="movimientos"></p>
+                <input id="okBtn" type="button" onclick="toggleVisibility('Message-Container')" value="OK!">
+            </div>
+        </div>
+    </div>
+
+    <br>
+     <div id="menu">
+      <div class="custom-select">
+        <select id="diffSelect">
+            <option value="10">Fácil</option>
+            <option value="15">Medio</option>
+            <option value="25">Difícil</option>
+            <option value="50">Experto</option>
+        </select>
+      </div>
+
+    <input id="startMazebtn" type="button" value="Iniciar Juego" onclick="makeMaze()">
+    </div>
+
+    <div id="view">
+        <div id="mazeContainer">
+            <canvas id="mazeCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+
+    <p id="instrucciones">Usa las flechas del teclado para moverte por el laberinto. Encuentra la entrada al desierto!</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
